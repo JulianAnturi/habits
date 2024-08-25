@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Habito App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Crear Hábito</h1>
+    <form id="habitoForm">
+        <label for="alarmTime">Hora de la Alarma:</label>
+        <input type="time" id="alarmTime" required>
+
+        <label for="alarmName">Nombre de la Alarma:</label>
+        <input type="text" id="alarmName" required>
+
+        <label for="endTime">Tiempo de Finalización (Horas:Minutos):</label>
+        <input type="text" id="endTime" placeholder="HH:MM" required>
+
+        <button type="submit">Crear Hábito</button>
+    </form>
+
+    <h2>Alarma Activa</h2>
+    <div id="activeAlarm">
+        <!-- Aquí se mostrarán las alarmas activas -->
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
